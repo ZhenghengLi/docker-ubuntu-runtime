@@ -8,8 +8,6 @@ RUN set -x \
     ## install by apt-get
     && apt-get update \
     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
-    ca-certificates \
-    openjdk-11-jre \
     libboost-dev libboost-filesystem-dev \
     liblz4-dev libsnappy-dev libzstd-dev liblog4cxx-dev \
     libmsgpack-dev libzookeeper-mt-dev libcpprest-dev libhdf5-dev \
