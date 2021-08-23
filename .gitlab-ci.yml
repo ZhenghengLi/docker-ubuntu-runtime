@@ -13,10 +13,10 @@ variables:
   CONTAINER_IMAGE: $CI_REGISTRY_IMAGE:$CONTAINER_TARGET
 
 stages:
-  - build-release
+  - build
 
 build:
-  stage: build-release
+  stage: build
   script:
     - docker build --pull -t $CONTAINER_IMAGE $CONTAINER_TARGET
     - docker push $CONTAINER_IMAGE
